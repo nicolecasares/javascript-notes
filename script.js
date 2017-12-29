@@ -315,71 +315,163 @@
 
 
 
+/////////////////////////////////////////////////
+//Statments and Expressions Lecture 
+
+	
+	// ex of a function statment
+
+	// function someFun(parameter){
+		//code
+	//}
+
+	//ex of a funtion Expression  
+
+	//var someFun = function{
+		//code
+	//}
+
+	//The diffrence between a Statment and a Expresstion 
+	// is exprestion produces a varlue and outcome
+	//A Stament just perfomes a action 
+
+
+	//EX of Expresstion is 
+	// 3 + 4;
+	// var x = 3;
+
+	//this prduces and output and outcome 
+
+
+	//Statments performs a action but no imidiate value 
+
+	 //if (x === 5){
+	 	//do something
+	 //}
+
+
+////////////////////////////////////////////
+// Lecture on Arrays 
+
+
+	//var names = ['Nicole', 'Monica', 'Kathleen'];
+	// this is an array with 3 strings 
+
+	//var years = new Array(1990, 1969, 1948);
+	//this is a second way to write an array 
+
+
+	// How do we access the arrays
+
+	//console.log(names);
+	//console.log(years);
+	//so access a specific item 
+	//console.log(names[0]);
+	//0 is always the first item 
+
+	//to mutate an array 
+	//names[1] = 'Kelly';
+	//console.log(names);
+
+	//we can mix ass many data types as you like
+
+	//var mixedArrayEx = ['Nicole', 28, true, 'apple'];
+
+	//console.log(mixedArrayEx);
+
+
+	//there are functions specific to arrays
+		//.push
+		//.upshift
+		//.pop
+		//.shift
+		//.indexOf
+
+	//push - adds an element at the end of an array
+		//mixedArrayEx.push('pink');
+		//console.log(mixedArrayEx);
+
+	//unshift- adds an element at the begining of an array
+		//mixedArrayEx.unshift('Ms.');
+		//console.log(mixedArrayEx); 
+
+	//pop()- removes an element from the end
+		//mixedArrayEx.pop();
+		//console.log(mixedArrayEx);
+		//removes pink
+	//shift -removes the first element of an array
+		//mixedArrayEx.shift(names);
+		//console.log(mixedArrayEx);
+		//removes Ms.
+
+	//indexOf - returns the position of the element that we passed into it 
+		//alert(mixedArrayEx.indexOf('Nicole'));
+		//returns 0
+
+
+	//indexOf is a great way to find out if or if not a element in a array 
+
+		//ex.
+
+	// if(mixedArrayEx.indexOf('apple') === -1){
+	// 	console.log('Nicole does not like apples');
+	// }else{
+	// 	console.log('Nicole likes apples');
+	// }
+
+		//if element is not in array -1 is returned 
+		
+
+
+///////////////////////////////////////////////////////////
+//Object and Properties Lecture 
+
+		//objects have key value pairs 
+		//this means each value has a name with is them the key
+		//we use objects to group together variables that have no particular order
+		//ojects- order does not matter
+		//arrays- order matters 
+
+
+		var nicole = {
+			name: 'Nicole',
+			lastName: 'Casares',
+			yearOfBirth: 1990,
+			isMarried: false,
+			cats: ['Cloud','Cocoa','Rain','Zues'],
+			job: 'artist',
+		};
+
+		console.log(nicole);
+		 
+
+
+		// to read a value out of an object 2 ways
+		// 1. use dot notation 
+		// 2. use [] and pass as a string
+
+
+		console.log(nicole.isMarried);
+
+		console.log(nicole['lastName']);
+
+
+		// to change something in the object
+
+		nicole.lastName = 'Gonzalez';
+		nicole['job'] = 'programmer';
+
+		console.log(nicole);
+
+		var xyz = 'job';
+		console.log(nicole[xyz]);
+		//this will log programmer in the console 
+		//this works bc xyv var/container we stored job
+		//this was repaced
+		//this is data mutation
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var nicole = {
-// 	name: 'Nicole',
-// 	lastName: 'Casares',
-// 	yearOfBirth: 1990,
-// 	isMarried: False
-// };
-
-// console.log(nicole);
-
-
-// var nicole = 
-
-
-
-
-
-
-// var nicole = {
-// 	name: 'Nicole',
-// 	lastName: 'Casares',
-// 	yearOfBirth: 1990,
-// 	isMarried: false,
-// 	job: 'artist'
-// };
-
-// console.log(nicole);
-
-// to read a value out of an object 2 ways
-// 1. use dot notation 
-// 2. use [] and pass as a string
-
-
-// console.log(nicole.isMarried);
-
-// console.log(nicole['lastName']);
-
-
-// to change something in the object
-
-// nicole.lastName = 'Gonzalez';
-// nicole['job'] = 'programmer';
-
-// console.log(nicole);
 
 
 // var albert = new Object();
