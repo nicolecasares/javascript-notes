@@ -433,16 +433,16 @@
 		//arrays- order matters 
 
 
-		var nicole = {
-			name: 'Nicole',
-			lastName: 'Casares',
-			yearOfBirth: 1990,
-			isMarried: false,
-			cats: ['Cloud','Cocoa','Rain','Zues'],
-			job: 'artist',
-		};
+		// var nicole = {
+		// 	name: 'Nicole',
+		// 	lastName: 'Casares',
+		// 	yearOfBirth: 1990,
+		// 	isMarried: false,
+		// 	cats: ['Cloud','Cocoa','Rain','Zues'],
+		// 	job: 'artist',
+		// };
 
-		console.log(nicole);
+		// console.log(nicole);
 		 
 
 
@@ -451,51 +451,93 @@
 		// 2. use [] and pass as a string
 
 
-		console.log(nicole.isMarried);
+		// console.log(nicole.isMarried);
 
-		console.log(nicole['lastName']);
+		// console.log(nicole['lastName']);
 
 
 		// to change something in the object
 
-		nicole.lastName = 'Gonzalez';
-		nicole['job'] = 'programmer';
+		// nicole.lastName = 'Gonzalez';
+		// nicole['job'] = 'programmer';
 
-		console.log(nicole);
+		// console.log(nicole);
 
-		var xyz = 'job';
-		console.log(nicole[xyz]);
+		// var xyz = 'job';
+		// console.log(nicole[xyz]);
 		//this will log programmer in the console 
 		//this works bc xyv var/container we stored job
 		//this was repaced
 		//this is data mutation
 
 
+////////////////////////////////////////////////////////////////////
+//Objects and Methods Lecture
+
+
+	//obects can hold other objects, arrays and functions
+
+	// var albert = new Object();
+
+	// albert.name = 'Albert';
+	// albert.lastName = 'Gonzalez';
+	// albert['isMarried'] = false;
+
+	// console.log(albert);
+
+	//v1.0
+
+	// var nicole = {
+	// 	name: 'Nicole',
+	// 	lastName: 'Casares',
+	// 	yearOfBirth: 1990,
+	// 	isMarried: false,
+	// 	job: 'artist',
+	// 	family: ['Albert', 'Rain', 'Zues', 'Cocoa', 'Cloud'],
+	// 	calculateAge: function () {
+	// 		return 2016 - this.yearOfBirth; 
+	// 	}
+	// };
+
+		//this object is holding a object expression 
+
+
+	//This Notes
+		//this.yearOfBirth
+		//referse to nicole //this object nicole
+
+	// var age = nicole.calculateAge();
+	// nicole.age = age;
+
+	//	console.log(nicole);
+
+	//here I am adding a function to a key/var age and then adding that key into the object nicole
+	//why did we not add the age into the object automatically, we can ...
+
+	//v2.0
+	var nicole = {
+		name: 'Nicole',
+		lastName: 'Casares',
+		yearOfBirth: 1990,
+		isMarried: false,
+		job: 'artist',
+		family: ['Albert', 'Rain', 'Zues', 'Cocoa', 'Cloud'],
+		calculateAge: function () {
+			this.age = 2018 - this.yearOfBirth; 
+		}
+	};
+
+	nicole.calculateAge();
+	console.log(nicole);
+	//execute function then console log the object
+
+
+	//This notes
+	//instead of this we could have used nicole but then it would not be as flexible 
+	
 
 
 
-// var albert = new Object();
-
-// albert.name = 'Albert';
-// albert.lastName = 'Gonzalez';
-// albert['isMarried'] = false;
-
-// console.log(albert);
-
-// objects can hold other oject, arrays and funtions
-
-
-// var nicole = {
-// 	name: 'Nicole',
-// 	lastName: 'Casares',
-// 	yearOfBirth: 1990,
-// 	isMarried: false,
-// 	job: 'artist',
-// 	family: ['Albert', 'Rain', 'Zues', 'Cocoa', 'Cloud'],
-// 	calculateAge: function () {
-// 		return 2016 - this.yearOfBirth; 
-// 	}
-// };
 
 
 
